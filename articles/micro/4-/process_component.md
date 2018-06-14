@@ -4,17 +4,17 @@
 
 日志结点支持将日志打印到控制台，从63版增加支持输出到指定的文件中，Log Output Mode可选Console;File System：
 
-![](/assets/7/image155.png)
+![](/assets/7-/image155.png)
 
 
 
 配置文件输出路径：
 
-![](/assets/7/image156.png)
+![](/assets/7-/image156.png)
 
 日志结点可以配置一个表达式，对应将要输出的数据。
 
-![](/assets/7/image157.png)
+![](/assets/7-/image157.png)
 
 注：如果输出的数据是一个对象类型，要求对象实现序列化接口，输出内容是对象toString()方法的返回值。
 
@@ -27,9 +27,9 @@
 ## JAVA节点
 
 
-![](/assets/7/image158.png)
+![](/assets/7-/image158.png)
 
-![](/assets/7/image159.png)
+![](/assets/7-/image159.png)
 
 l Java结点可以直接注册一个实现com.ufida.eip.java.IContextProcessor接口的类。 实现handleMessageContext方法。
 
@@ -43,14 +43,14 @@ l 事务回滚类属性配置有事务的情况下回滚事务的操作类，事
 
 ## RuleMap
 
-![](/assets/7/image160.png)
+![](/assets/7-/image160.png)
 
 
 RuleMap结点可以选择一个己有的交换规则文件，或新建一个交换规则文件。
 
 当父级节点的输出内容与下一节点的输入值不匹配的时候，则需要使用RuleMap节点。
 
-![](/assets/7/image161.png)
+![](/assets/7-/image161.png)
 
 当两个节点有连线时，可直接添加RuleMap节点在其连线上，则会根据上下节点的API定义自动生成文件名以及根据上下节点新建RuleMap文件。
 
@@ -66,11 +66,11 @@ l 配置
 
 从右侧面板拖入一个“数据库写入规则”到编辑器中。
 
-![](/assets/7/image162.png)
+![](/assets/7-/image162.png)
 
 l 属性设置
 
-![](/assets/7/image163.png)
+![](/assets/7-/image163.png)
 
 
 规则文件：可以选择或新建数据库写入文件，如果是选择操作，已存在的规则文件内的类型需要与上一个节点的API一致；如果是新建操作，新建的规则文件中会把上一个节点的API的返回值作为默认写入类型展示，并打开写入规则编辑器，新建之前要保证写入规则节点前面有一个绑API的服务编排节点。
@@ -95,11 +95,11 @@ l 配置
 
 从右侧面板拖入一个“数据库查询规则”到编辑器中。
 
-![](/assets/7/image164.png)
+![](/assets/7-/image164.png)
 
 l 属性设置
 
-![](/assets/7/image165.png)
+![](/assets/7-/image165.png)
 
 
 服务文件路径及操作：选择一个API文件及操作，从数据库中查询的数据将放到messageContext中对应的API的参数中。
